@@ -59,8 +59,7 @@ ul {
 }
 
 .highlight {
-    background-color: #ffd600;
-    color: #000000;
+    color: white;
     padding: 10px;
     border-radius: 5px;
     font-weight: bold;
