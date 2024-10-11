@@ -1,202 +1,79 @@
-/* General Styles */
 body {
-  font-family: 'Arial', sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #fdfdfd;
-  color: #333;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f0f0f0;
 }
 
-/* Header Section */
-.main-header {
-  background: linear-gradient(to right, #ff7e5f, #feb47b), url('hollywood-background.jpg') no-repeat center center/cover;
-  color: white;
-  text-align: center;
-  padding: 100px 0;
+header {
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 10px 10px 0 0;
 }
 
-.main-header h1 {
-  font-size: 4rem;
-  margin-bottom: 0.5rem;
-  color: #fff;
+h1 {
+    margin: 0;
 }
 
-.main-header p {
-  font-size: 1.5rem;
-  margin-bottom: 1.5rem;
-  color: #f1f1f1;
+h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 5px;
 }
 
-.main-header .btn {
-  padding: 10px 20px;
-  background-color: #ff4b1f;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
-  transition: background-color 0.3s;
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.main-header .btn:hover {
-  background-color: #ff7e5f;
+section {
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
 }
 
-/* Features Section */
-#features {
-  padding: 50px;
-  background-color: #fff3e0;
-  color: #333;
+section:hover {
+    transform: translateY(-5px);
 }
 
-#features h2 {
-  text-align: center;
-  margin-bottom: 30px;
-  color: #ff4b1f;
+.characteristics { background-color: #e74c3c; color: white; }
+.golden-age-end { background-color: #f39c12; }
+.big-five { background-color: #2ecc71; }
+.little-three { background-color: #9b59b6; color: white; }
+.spotlight { background-color: #1abc9c; color: white; }
+
+ul {
+    padding-left: 20px;
 }
 
-.features-grid {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+.highlight {
+    background-color: #f1c40f;
+    color: #34495e;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
 }
 
-.feature {
-  background-color: #ffe082;
-  padding: 20px;
-  border-radius: 10px;
-  width: 30%;
-  margin: 15px;
-  text-align: center;
-  color: #ff6f00;
-  transition: transform 0.3s;
-}
-
-.feature:hover {
-  transform: scale(1.05);
-}
-
-/* Studios Section */
-#studios, #little-three {
-  padding: 50px;
-  background-color: #e1f5fe;
-}
-
-#studios h2, #little-three h2 {
-  text-align: center;
-  color: #0288d1;
-}
-
-.studio-grid {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-
-.studio {
-  background-color: #b3e5fc;
-  padding: 20px;
-  border-radius: 10px;
-  width: 18%;
-  margin: 10px;
-  text-align: center;
-  transition: box-shadow 0.3s;
-}
-
-.studio:hover {
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-}
-
-#little-three ul {
-  list-style: none;
-  padding: 0;
-  text-align: center;
-}
-
-#little-three li {
-  padding: 10px;
-  font-size: 1.2rem;
-  color: #0288d1;
-}
-
-/* Rise and Fall Section */
-#rise-fall {
-  padding: 50px;
-  background-color: #e8f5e9;
-}
-
-#rise-fall h2 {
-  text-align: center;
-  color: #388e3c;
-}
-
-.timeline {
-  text-align: center;
-  color: #2e7d32;
-}
-
-.timeline p {
-  margin: 10px 0;
-  padding: 10px;
-  background-color: #a5d6a7;
-  border-radius: 5px;
-  display: inline-block;
-}
-
-/* Hitchcock Section */
-#hitchcock {
-  padding: 50px;
-  background-color: #ffe0b2;
-}
-
-#hitchcock h2 {
-  text-align: center;
-  color: #d84315;
-}
-
-.gallery {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 20px;
-}
-
-.gallery img {
-  width: 30%;
-  border-radius: 10px;
-  transition: transform 0.3s;
-}
-
-.gallery img:hover {
-  transform: scale(1.05);
-}
-
-/* Footer Section */
 footer {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+    color: #7f8c8d;
 }
 
-footer p {
-  margin: 0;
-}
-
-footer .social-links {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-}
-
-footer .social-links li {
-  margin: 0 10px;
-}
-
-footer .social-links a {
-  color: white;
-  text-decoration: none;
-}
-
-footer .social-links a:hover {
-  text-decoration: underline;
+@media (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr;
+    }
 }
