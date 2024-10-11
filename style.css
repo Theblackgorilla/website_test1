@@ -3,13 +3,13 @@ body {
   font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f5f5f5;
+  background-color: #fdfdfd;
   color: #333;
 }
 
 /* Header Section */
 .main-header {
-  background: url('hollywood-background.jpg') no-repeat center center/cover;
+  background: linear-gradient(to right, #ff7e5f, #feb47b), url('hollywood-background.jpg') no-repeat center center/cover;
   color: white;
   text-align: center;
   padding: 100px 0;
@@ -18,82 +18,139 @@ body {
 .main-header h1 {
   font-size: 4rem;
   margin-bottom: 0.5rem;
+  color: #fff;
 }
 
 .main-header p {
   font-size: 1.5rem;
   margin-bottom: 1.5rem;
+  color: #f1f1f1;
 }
 
 .main-header .btn {
   padding: 10px 20px;
-  background-color: #444;
+  background-color: #ff4b1f;
   color: white;
   text-decoration: none;
   border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
 }
 
 .main-header .btn:hover {
-  background-color: #666;
+  background-color: #ff7e5f;
 }
 
 /* Features Section */
 #features {
   padding: 50px;
-  background-color: #fff;
+  background-color: #fff3e0;
+  color: #333;
 }
 
 #features h2 {
   text-align: center;
   margin-bottom: 30px;
+  color: #ff4b1f;
 }
 
 .features-grid {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .feature {
-  background-color: #eee;
+  background-color: #ffe082;
   padding: 20px;
-  border-radius: 5px;
+  border-radius: 10px;
   width: 30%;
+  margin: 15px;
   text-align: center;
+  color: #ff6f00;
+  transition: transform 0.3s;
+}
+
+.feature:hover {
+  transform: scale(1.05);
 }
 
 /* Studios Section */
 #studios, #little-three {
   padding: 50px;
-  background-color: #ddd;
+  background-color: #e1f5fe;
+}
+
+#studios h2, #little-three h2 {
+  text-align: center;
+  color: #0288d1;
 }
 
 .studio-grid {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .studio {
-  background-color: #fff;
+  background-color: #b3e5fc;
   padding: 20px;
-  border-radius: 5px;
+  border-radius: 10px;
   width: 18%;
+  margin: 10px;
   text-align: center;
+  transition: box-shadow 0.3s;
+}
+
+.studio:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 #little-three ul {
   list-style: none;
+  padding: 0;
   text-align: center;
 }
 
 #little-three li {
   padding: 10px;
   font-size: 1.2rem;
+  color: #0288d1;
+}
+
+/* Rise and Fall Section */
+#rise-fall {
+  padding: 50px;
+  background-color: #e8f5e9;
+}
+
+#rise-fall h2 {
+  text-align: center;
+  color: #388e3c;
+}
+
+.timeline {
+  text-align: center;
+  color: #2e7d32;
+}
+
+.timeline p {
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #a5d6a7;
+  border-radius: 5px;
+  display: inline-block;
 }
 
 /* Hitchcock Section */
 #hitchcock {
   padding: 50px;
-  background-color: #f9f9f9;
+  background-color: #ffe0b2;
+}
+
+#hitchcock h2 {
+  text-align: center;
+  color: #d84315;
 }
 
 .gallery {
@@ -104,7 +161,12 @@ body {
 
 .gallery img {
   width: 30%;
-  border-radius: 5px;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
 }
 
 /* Footer Section */
